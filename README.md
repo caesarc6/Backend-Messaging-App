@@ -6,7 +6,6 @@ CSCI 380 Project
   Student at John Jay College of Criminal Justice.
   Majoring in Computer Science.
 
-- christian dane 
-
+- christian dane
 
 Express.js - (handlebars - html)
