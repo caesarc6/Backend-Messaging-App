@@ -1,7 +1,7 @@
 # Backend-Messaging-App
 CSCI 380 Project
 
-* christian dane 
+* christian dane (student)
 
 
 
