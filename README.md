@@ -27,5 +27,8 @@ Express.js - (handlebars - html)
 Backend for a accessibility focused messaging app
 
 - William Zhicay
+  I am a student of this course!
 
-I am a student of this course!
+* Damian Perera (Student)
+  I am a computer science student at John Jay College
+  Edited by Damian version 4
