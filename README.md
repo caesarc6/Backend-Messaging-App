@@ -8,10 +8,6 @@ CSCI 380 Project
 
 - christian dane
 
-## Express.js - (handlebars - html)
-
-- christian dane
-
 ---
 
 ![](./_assets/1263746.jpeg)
@@ -21,8 +17,6 @@ _Sonyl Nagale (Adjunct Lecturer)_
 I am a Solutions Architect and an instuctor at John Jay and Baruch Colleges
 
 Express.js - (handlebars - html)
-
-# Back-Messaging-App
 
 Backend for a accessibility focused messaging app
 
