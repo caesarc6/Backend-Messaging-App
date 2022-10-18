@@ -6,11 +6,10 @@ CSCI 380 Project
   Student at John Jay College of Criminal Justice.
   Majoring in Computer Science.
 
-
 ![IMG_0814](https://user-images.githubusercontent.com/113483417/196541123-107cfd7b-6f3f-4a49-94de-dc967d020e5f.jpg)
 
 - christian dane
-i'm a student at john jay majoring in CSIC
+  i'm a student at john jay majoring in CSIC
 
 ---
 
@@ -23,6 +22,7 @@ I am a Solutions Architect and an instuctor at John Jay and Baruch Colleges
 Express.js - (handlebars - html)
 
 Backend for a accessibility focused messaging app
+![](./_assets/me.jpg)
 
 - William Zhicay
   Student at John Jay College.
