@@ -25,4 +25,5 @@ Backend for a accessibility focused messaging app
 
 * Damian Perera (Student)
   I am a computer science student at John Jay College
-  Edited by Damian version 4
+  ![](./_assets/IMG_8052.PNG)
+
