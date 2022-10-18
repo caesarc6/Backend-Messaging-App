@@ -31,3 +31,7 @@ Backend for a accessibility focused messaging app
 * Damian Perera (Student)
   I am a computer science student at John Jay College
   ![](./_assets/IMG_8052.PNG)
+
+
+Ramee Yudeh
+CS Student at John Jay and I am TIRED.
