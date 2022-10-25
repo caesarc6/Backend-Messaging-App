@@ -16,7 +16,21 @@ const options = {
   }
 };
 
+// TWILIO STUFF
+const twilio = require('twilio');
 
+const accountSid = 'AC175c092521e2c18900e695182347bb28'; // Your Account SID from www.twilio.com/console
+const authToken = '37eab888cc313fb63822ea89a695712a'; // Your Auth Token from www.twilio.com/console
+
+const client = new twilio(accountSid, authToken);
+
+client.messages
+  .create({
+    body: 'chicken sandwhich',
+    to: '+19293559539', // Text this number
+    from: '+15102161889', // From a valid Twilio number
+  })
+  .then((message) => console.log(message.sid));
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
