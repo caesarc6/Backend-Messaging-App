@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 
+
+
 module.exports = router;
 
 const axios = require("axios");
@@ -15,6 +17,20 @@ const options = {
     'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
   }
 };
+
+const accountSid = 'ACeb965b482a4017d1a9869d04869ccbe5'; // Your Account SID from www.twilio.com/console
+const authToken = '1df0eed49a1a9c109ff51feddea8991d'; // Your Auth Token from www.twilio.com/console
+const twilio = require('twilio');
+
+const client = new twilio(accountSid, authToken);
+
+client.messages
+  .create({
+    body: 'Hello from Node',
+    to: '+13474339798', // Text this number
+    from: '+13233752865', // From a valid Twilio number
+  })
+  .then((message) => console.log(message.sid));
 
 
 
