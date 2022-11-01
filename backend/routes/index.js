@@ -12,8 +12,8 @@ const client = new twilio(accountSid, authToken);
 client.messages
   .create({
     body: 'Hello from Node',
-    to: '+16469156997', // Text to this number
-    from: '+14634002450', // From a valid Twilio number
+    to: '+', // Text to this number
+    from: '+', // From a valid Twilio number
   }).then((message) => console.log('Send Success'));
 
 router.get('/', function(req, res){
