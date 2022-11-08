@@ -2,7 +2,6 @@
 
 CSCI 380 Project
 
- Ramee Yudeh
-  CS student at John Jay who loves chicken sandwhiches
+- Ramee Yudeh
+  CS student at John Jay!
   ![](./_assets/rypic.jpg)
-  ![](./_assets/gollum.gif)
