@@ -16,8 +16,6 @@ const options = {
   }
 };
 
-
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   axios.request(options).then(function (response) {
