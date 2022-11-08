@@ -1,9 +1,27 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+
+module.exports = router;
+
+const axios = require("axios");
+
+const options = {
+  method: 'GET',
+  url: 'https://randomuser.me/api/',
+  
+};
+
+/* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  axios.request(options).then((response) => {
+    //res.render('users', {response: response.data.results[0].name.first});
+    
+    res.render('users', {response: response.data.results[0]}); // access to user description
+    console.log(JSON.stringify(response.data.results[0]));
+  }).catch(function(error){
+    console.log(error);
+  });
 });
 
 module.exports = router;
