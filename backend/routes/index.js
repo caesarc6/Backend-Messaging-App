@@ -17,7 +17,7 @@ module.exports = router;
 
 // // const accountSid = process.env.TWILIO_ACCOUNT_SID;
 // // const authToken = process.env.TWILIO_AUTH_TOKEN;
-// // const client = require('twilio')('ACf98bc427e83fc27f0c83b57405138b61', '1a346606003fc6398186bfa7103686dd');
+// // const client = require('twilio')('', '');
 // // const twilio = require('twilio');
 
 
@@ -40,8 +40,8 @@ module.exports = router;
 // client.messages
 //   .create({
 //     body: 'Hello world from 237!',
-//     to: '+13474800373', //'+13474800373',  // Text this number
-//     from: '+14633454855', // From a valid Twilio number
+//     to: '+', //'+',  // Text this number
+//     from: '+', // From a valid Twilio number
 //   })
 //   .then((message) => console.log(message.sid));
 
