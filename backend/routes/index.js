@@ -28,8 +28,8 @@ module.exports = router;
 // // const client = new twilio(accountSid, authToken);
 
 
-//   const accountSid = 'ACf98bc427e83fc27f0c83b57405138b61';
-// const authToken = '1a346606003fc6398186bfa7103686dd';
+//   const accountSid = '';
+// const authToken = '';
 
 
 
@@ -39,7 +39,7 @@ module.exports = router;
 
 // client.messages
 //   .create({
-//     body: 'Hello world from 237!',
+//     body: '',
 //     to: '+', //'+',  // Text this number
 //     from: '+', // From a valid Twilio number
 //   })
