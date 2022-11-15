@@ -23,11 +23,9 @@ app.post('/send',(req, res) => {
   res.send('POST request')
 });
 
-/*
 app.use((req, res, next) => {
-  res.status(404).send("Error 404 found");
+  res.status(404).send("OMG Error 404 hehe");
 })
-*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
