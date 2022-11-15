@@ -13,7 +13,7 @@ client.messages
   .create({
     body: 'Hello from Node',
     to: process.env.PHONE_NUMBER, // Text to this number
-    from: '+15102161889', // From a valid Twilio number
+    from: process.env.TWILIO_PHONENUM, // From a valid Twilio number
   }).then((message) => console.log('Send Success'));
 
 router.get('/', function(req, res){
