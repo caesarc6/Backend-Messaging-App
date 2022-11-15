@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var app = express();
+
 
 // import routes
 var indexRouter = require('./routes/index');
@@ -11,14 +13,21 @@ var weather = require('./routes/weather');
 //var sendText = require('./routes/sms');
 
 var app = express();
+var bodyParser = require('body-parser'); app.use(bodyParser.json()); 
 
-app.get('/', (req, res) => {
+app.get('/hello', (req, res) => {
   res.send('HELLOOOOOO FROM APP.JS')
-})
+});
 
 app.post('/send',(req, res) => {
-  res.send('Got a POST request, test')
+  res.send('POST request')
+});
+
+/*
+app.use((req, res, next) => {
+  res.status(404).send("Error 404 found");
 })
+*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -53,3 +62,5 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+
