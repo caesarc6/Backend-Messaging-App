@@ -12,6 +12,14 @@ var weather = require('./routes/weather');
 
 var app = express();
 
+app.get('/', (req, res) => {
+  res.send('HELLOOOOOO FROM APP.JS')
+})
+
+app.post('/send',(req, res) => {
+  res.send('Got a POST request, test')
+})
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
