@@ -7,10 +7,20 @@ var logger = require('morgan');
 // import routes
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+
+var sendRouter = require('./routes/send');
+
 var weather = require('./routes/weather');
 //var sendText = require('./routes/sms');
 
+
 var app = express();
+
+app.get('/',(req, res) => {
+  res.send('Hello World!, This is from file app.js')
+})
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -22,11 +32,15 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 // Specify routers
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/weather', weather);
+app.use('/send', sendRouter);
+
+//app.use('/weather', weather);
 //app.use('/sendText', sendText);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
