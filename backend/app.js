@@ -19,6 +19,7 @@ app.get('/hello', (req, res) => {
   res.send('HELLOOOOOO FROM APP.JS')
 });
 
+
 app.post('/send',(req, res) => {
   res.send('POST request')
 });
