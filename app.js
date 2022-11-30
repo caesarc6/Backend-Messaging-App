@@ -4,6 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var functions = require('firebase-functions');
+<<<<<<< HEAD
+=======
+
+>>>>>>> ea7bb6b8cfd53e06f2f086f8d98f812ec2208375
 // import routes
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
