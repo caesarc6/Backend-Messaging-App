@@ -30,13 +30,9 @@ router.get('/', function(req, res, next) {
 
 module.exports = router;
 
-const axios = require("axios");
+//const axios = require("axios");
 
-const options = {
-  method: 'GET',
-  url: 'https://randomuser.me/api/',
-  
-};
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
