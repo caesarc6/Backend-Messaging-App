@@ -18,6 +18,15 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MESSAGEAPPCSCI380 }}'
           channelId: live
           projectId: messageappcsci380
+      - name: 'Env'
+        run: |
+          touch .env
+          echo AUTH_TOKEN=${{secrets.AUTH_TOKEN}} >> .env
+          echo TWILIO_ACCOUNT_SID=${{secrets.TWILIO_ACCOUNT_SID}} >> .env
+          echo MY_PHONE_NUMBER=${{secrets.MY_PHONE_NUMBER}} >> .env
+          echo TWILIO_PHONE_NUMBER=${{secrets.TWILIO_PHONE_NUMBER}} >> .env
+          cat .env
+        
       - uses: w9jds/firebase-action@master
         with:
           args: deploy --only functions
