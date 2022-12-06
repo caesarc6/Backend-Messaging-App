@@ -1,6 +1,6 @@
 {
 	"hosting": {
-		"public": "dist/messageappcsci380",
+		"public": "public",
 		"ignore": [
 			"firebase.json",
 			"**/.*",
