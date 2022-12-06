@@ -1,8 +1,8 @@
 {
 	"hosting": {
-		"public":[ "public",
-    "public/stylesheets/"
-  ],
+		"public": "public/stylesheets",
+    
+  
 		"ignore": [
 			"firebase.json",
 			"**/node_modules/**",
