@@ -6,16 +6,7 @@
       "**/.*",
       "**/node_modules/**",
       ".env**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination:": "/index.html"
-      }
     ]
-  },
-  "functions": {
-    "source": "./",
-    "runtime": "nodejs16"
-  }
+
+}
 }
