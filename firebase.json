@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "routes",
+    "public": "./backend",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -10,7 +10,6 @@
     "rewrites": [
       {
         "source": "**",
-        "function": "app",
         "destination:": "/index.html"
       }
     ]
