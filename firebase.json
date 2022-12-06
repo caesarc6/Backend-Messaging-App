@@ -1,37 +1,21 @@
 {
   "hosting": {
-    "public": [
-      "public",
-      "public/routes",
-      "public/views"
-    ],
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**",
-      "**.env**"
+      ".env**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination:": "/index.html"
+      }
     ]
   },
-  "functions": [
-    {
-      "source": "functions",
-      "codebase": "default",
-      "ignore": [
-        "node_modules",
-        ".git",
-        "firebase-debug.log",
-        "firebase-debug.*.log"
-      ]
-    },
-    {
-      "source": "messagingappcsci380",
-      "codebase": "messagingappcsci380",
-      "ignore": [
-        "node_modules",
-        ".git",
-        "firebase-debug.log",
-        "firebase-debug.*.log"
-      ]
-    }
-  ]
+  "functions": {
+    "source": "./",
+    "runtime": "nodejs16"
+  }
 }
