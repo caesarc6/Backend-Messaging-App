@@ -3,14 +3,15 @@
     "public": "public",
     "ignore": [
       "firebase.json",
-      "/.*",
-      "/node_modules/**",
+      "**/.*",
+      "**/node_modules/**",
       ".env**"
     ],
     "rewrites": [
       {
         "source": "**",
-        "function": "app"
+        "function": "app",
+        "destination:": "/index.html"
       }
     ]
   },
