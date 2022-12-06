@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "./backend",
+    "public": "public/stylesheets/idex.html",
     "ignore": [
       "firebase.json",
       "**/.*",
