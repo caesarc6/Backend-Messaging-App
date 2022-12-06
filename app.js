@@ -25,7 +25,7 @@ app.listen(3002, () => {
 app.use('/weather', weather);
 
 app.get("/",(req, res) => {
-  res.send('/weather')
+  res.send('App.js test page')
 })
 
 
