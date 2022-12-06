@@ -3,7 +3,12 @@ var router = express.Router();
 const twilio = require('twilio');
 require('dotenv').config();
 
+var app = express();
 
+
+app.get('/',(req, res) => {
+  res.send('Hello World!, This is from file app.js')
+})
 
 const accountSid = process.env.TWILIO_ACCOUNT_SID; // Your Account SID from www.twilio.com/console
 const authToken = process.env.AUTH_TOKEN; // Your Auth Token from www.twilio.com/console

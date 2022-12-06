@@ -6,7 +6,7 @@ var logger = require('morgan');
 var functions = require('firebase-functions');
 // import routes
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+//var usersRouter = require('./views/users.hbs');
 
 var sendRouter = require('./routes/send');
 var responseRouter = require('./routes/response');
@@ -17,11 +17,18 @@ var weather = require('./routes/weather');
 
 var app = express();
 
-/*
-app.get('/',(req, res) => {
-  res.send('Hello World!, This is from file app.js')
+app.listen(3002, () => {
+  console.log("listening on http://localhost:3002");
 })
-*/
+
+//app.use('/users', usersRouter);
+app.use('/weather', weather);
+
+app.get("/",(req, res) => {
+  res.send('/weather')
+})
+
+
 
 
 // view engine setup
@@ -37,7 +44,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Specify routers
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+
 app.use('/send', sendRouter);
 //app.use('/response', responseRouter);
 
