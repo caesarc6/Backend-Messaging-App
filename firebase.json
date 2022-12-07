@@ -15,7 +15,7 @@
     ]
   },
   "functions": {
-    "source": "./",
+    "source": "./app.js",
     "runtime": "nodejs16"
   }
 }
