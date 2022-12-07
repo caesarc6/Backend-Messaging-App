@@ -5,18 +5,10 @@
       "source": "**",
       "function": "app"
     }],
-
-    "//redirects": [{
-      "source": "/foo",
-      "destination": "public/stylesheets/views/users",
-      "type": 301
-    }],
-
     "functions": {
       "source": "./index.js",
       "runtime": "nodejs16"
     },
-
     "ignore": [
       "firebase.json",
       "**/node_modules/**",
