@@ -24,12 +24,6 @@ app.listen(3002, () => {
 //app.use('/users', usersRouter);
 app.use('/weather', weather);
 
-app.get("/",(req, res) => {
-  res.send('App.js test page')
-})
-
-
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
