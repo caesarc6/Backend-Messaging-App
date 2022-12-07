@@ -5,14 +5,16 @@
       "source": "**",
       "function": "app"
     }],
-    "functions": {
-      "source": "./index.js",
-      "runtime": "nodejs16"
-    },
+
     "ignore": [
       "firebase.json",
       "**/node_modules/**",
       "**/.env/**"
+
     ]
+  },
+  "functions": {
+    "source": "./index.js",
+    "runtime": "nodejs16"
   }
 }
