@@ -1,29 +1,21 @@
 {
-	"hosting": {
-		"public": "public/stylesheets", 
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "/.*",
+      "/node_modules/**",
+      ".env**"
+    ],
     "rewrites": [
       {
-          "source": "**",
-          "function": "app"
+        "source": "**",
+        "function": "app"
       }
-  ],
-    
-    "redirects": [ {
-      "source": "/foo",
-      "destination": "public/stylesheets/views/users",
-      "type": 301
-    } ],
-
-    "functions": {
-      "source" : "./",
-      "runtime" : "nodejs16"
-    },
-  
-		"ignore": [
-			"firebase.json",
-			"**/node_modules/**",
-      "**/.env/**"
-
-		]
-	}
+    ]
+  },
+  "functions": {
+    "source": "./",
+    "runtime": "nodejs16"
+  }
 }
