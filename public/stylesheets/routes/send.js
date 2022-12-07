@@ -14,13 +14,10 @@ require('dotenv').config();
 
 router.post('/', (req, res) => {
     //console.log('POST request:', req.body);
-    console.log(req.headers);
-    if (req.headers['x-post-380'] !== 'sonyl') return;
-
     console.log('Name:',req.body.name);
     console.log('Phone number:',req.body.phone);
     console.log('Text message:',req.body.message);
-    res.send('Got a POST request, message sent')
+    res.send('Got a POST request, test route')
 
     var text_message = req.body.message;
     var phone_number = req.body.phone;
