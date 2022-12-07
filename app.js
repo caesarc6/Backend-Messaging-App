@@ -24,9 +24,9 @@ app.listen(3002, () => {
 //app.use('/users', usersRouter);
 app.use('/weather', weather);
 
-app.get("/",(req, res) => {
-  res.send('App.js test page')
-})
+// app.get("/",(req, res) => {
+//   res.send('App.js test page')
+// })
 
 
 
