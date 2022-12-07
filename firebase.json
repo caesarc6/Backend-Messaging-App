@@ -14,7 +14,10 @@
       "type": 301
     } ],
 
- 
+    "functions": {
+      "source" : "./",
+      "runtime" : "nodejs16"
+    },
   
 		"ignore": [
 			"firebase.json",
