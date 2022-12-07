@@ -39,13 +39,13 @@ const options = {
 const my_number = process.env.MY_PHONE_NUMBER;
 const twilio_number = process.env.TWILIO_PHONE_NUMBER;
 
-client.messages
-  .create({
-    body: 'Hellow from the backend team!',
-    to: my_number, // Text this number
-    from: twilio_number , // From a valid Twilio number
-  })
-  .then((message) => console.log(message.sid));
+// client.messages
+//   .create({
+//     body: 'Hellow from the backend team!',
+//     to: my_number, // Text this number
+//     from: twilio_number , // From a valid Twilio number
+//   })
+//   .then((message) => console.log(message.sid));
 
 
 

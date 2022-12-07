@@ -2,24 +2,24 @@ var express = require('express');
 var router = express.Router();
 module.exports = router;
 
-//const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 
-//const app = express();
-//app.use(bodyParser.urlencoded({ extended: true }));
+// const app = express();
+// app.use(bodyParser.urlencoded({ extended: true }));
 
 const twilio = require('twilio');
 require('dotenv').config();
 
 
-
 router.post('/', (req, res) => {
-    //console.log('POST request:', req.body);
     console.log(req.headers);
-    if (req.headers['x-post-380'] !== 'sonyl') return;
+    if (req.headers['x-post-380'] !== 'sonyl') 
+        return;
+    
 
-    console.log('Name:',req.body.name);
-    console.log('Phone number:',req.body.phone);
-    console.log('Text message:',req.body.message);
+    console.log('Name:', req.body.name);
+    console.log('Phone number:', req.body.phone);
+    console.log('Text message:', req.body.message);
     res.send('Got a POST request, message sent')
 
     var text_message = req.body.message;
@@ -31,19 +31,13 @@ router.post('/', (req, res) => {
 
     const client = new twilio(accountSid, authToken);
 
-//const my_number = process.env.MY_PHONE_NUMBER;
+    client.messages.create({
+        body: text_message, to: phone_number, // Text this number
+        from: twilio_number, // From a valid Twilio number
+    }).then((message) => console.log(message.sid));
+
+})
+
+
+// const my_number = process.env.MY_PHONE_NUMBER;
 const twilio_number = process.env.TWILIO_PHONE_NUMBER;
-
-client.messages
-  .create({
-    body: text_message,
-    to: phone_number, // Text this number
-    from: twilio_number , // From a valid Twilio number
-  })
-  .then((message) => console.log(message.sid));
-
-  })
-
- 
-
-  

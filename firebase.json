@@ -1,26 +1,27 @@
 {
-	"hosting": {
-		"public": "public/stylesheets", 
-    "rewrites": [
-      {
-          "source": "**",
-          "function": "app"
-      }
-  ],
-    
-    "redirects": [ {
+  "hosting": {
+    "public": "public/stylesheets",
+    "rewrites": [{
+      "source": "**",
+      "function": "app"
+    }],
+
+    "//redirects": [{
       "source": "/foo",
       "destination": "public/stylesheets/views/users",
       "type": 301
-    } ],
+    }],
 
- 
-  
-		"ignore": [
-			"firebase.json",
-			"**/node_modules/**",
+    "functions": {
+      "source": "./functions",
+      "runtime": "nodejs16"
+    },
+
+    "ignore": [
+      "firebase.json",
+      "**/node_modules/**",
       "**/.env/**"
 
-		]
-	}
+    ]
+  }
 }
