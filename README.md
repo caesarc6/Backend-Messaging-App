@@ -12,10 +12,12 @@ Majoring in Computer Science.
   
 _Christian Dane_
   i'm a student at john jay majoring in CSIC
+  
 <img src="https://user-images.githubusercontent.com/113483417/196541123-107cfd7b-6f3f-4a49-94de-dc967d020e5f.jpg" width="350" height="100%" >
 
 _Sonyl Nagale (Adjunct Lecturer)_
 I am a Solutions Architect and an instuctor at John Jay and Baruch Colleges
+
 <img src="./_assets/1263746.jpeg" width="350" height="100%">
 
 
@@ -23,12 +25,14 @@ I am a Solutions Architect and an instuctor at John Jay and Baruch Colleges
 _William Zhicay_
   Student at John Jay College.
   Majoring in Computer Science and Information Technology
+  
 <img src="./_assets/me.jpg" width="350" height="100%">
 
 
 
 _Damian Perera (Student)_
   I am a computer science student at John Jay College
+  
   <img src="./_assets/IMG_8052.PNG" width="350" height="100%">
   
   
@@ -36,6 +40,7 @@ _Damian Perera (Student)_
 
 _Ramee Yudeh_
   CS student at John Jay!
+  
     <img src="./_assets/rypic.jpg" width="350" height="100%">
   
   
