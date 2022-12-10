@@ -41,7 +41,7 @@ _Damian Perera (Student)_
 _Ramee Yudeh_
   CS student at John Jay!
   
-    <img src="./_assets/rypic.jpg" width="350" height="100%">
+  <img src="./_assets/rypic.jpg" width="350" height="100%">
   
   
    
