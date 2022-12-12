@@ -31,6 +31,9 @@ router.post('/', (req, res) => {
 
     const client = new twilio(accountSid, authToken);
 
+    const my_number = process.env.MY_PHONE_NUMBER;
+    const twilio_number = process.env.TWILIO_PHONE_NUMBER;
+
     client.messages.create({
         body: text_message, to: phone_number, // Text this number
         from: twilio_number, // From a valid Twilio number
@@ -39,5 +42,4 @@ router.post('/', (req, res) => {
 })
 
 
-// const my_number = process.env.MY_PHONE_NUMBER;
-const twilio_number = process.env.TWILIO_PHONE_NUMBER;
+
