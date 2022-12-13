@@ -1,6 +1,6 @@
 # Backend-Messaging-App
 
-### CSCI 380 Project
+## CSCI 380 Project
 
 An accessibility based messaging web application.
 
@@ -46,20 +46,8 @@ _Ramee Yudeh_
   
 <img src="./_assets/rypic.jpg" width="350" height="100%">
    
-   
-##  Tech
-
-  Backend used
-  
-  - [Express] - Routes and handlebars files
-  - [NodeJS] - Server Environment
-  - [Axios] - HTTP Client for fetching data
-  - [Twilio API] -An API used for SMS functionality
-  - [Random API] - Gets random user information 
-  - [Weather API] - Gets weather data from any location
     
-    
-## How to use
+# How to use
 
 In terminal..
 
@@ -74,6 +62,7 @@ To start server
 
 Open web browser to:
 `http://localhost:3001`
+
 
 # API Endpoints for Frontend
 Send a POST request in JSON. Header values must contain secured value name and key.
@@ -108,6 +97,18 @@ JSON fields example:
 "phone": "+0000000000",
 ```
 
+
+##  Tech
+
+  Backend used
+  
+  - [Express] - Routes and handlebars files
+  - [NodeJS] - Server Environment
+  - [Axios] - HTTP Client for fetching data
+  - [Twilio API] -An API used for SMS functionality
+  - [Random API] - Gets random user information 
+  - [Weather API] - Gets weather data from any location
+    
 
 # Requirements
 
