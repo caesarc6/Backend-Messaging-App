@@ -10,6 +10,9 @@ module.exports = router;
 const twilio = require('twilio');
 require('dotenv').config();
 
+var cors = require('cors');
+router.options('/',cors());
+
 
 
 router.post('/', (req, res) => {
