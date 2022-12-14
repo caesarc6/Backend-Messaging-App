@@ -13,13 +13,15 @@ var responseRouter = require('./routes/response');
 
 var weather = require('./routes/weather');
 //var sendText = require('./routes/sms');
-
+var cors = require('cors');
 
 var app = express();
+app.use(cors);
 
 app.listen(3002, () => {
   console.log("listening on http://localhost:3002");
 })
+
 
 //app.use('/users', usersRouter);
 app.use('/weather', weather);
