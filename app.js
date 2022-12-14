@@ -22,6 +22,12 @@ app.listen(80, () => {
   console.log("listening on http://localhost:80");
 })
 
+app.options('*', function (req, res) {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader('Access-Control-Allow-Methods', '*');
+  res.setHeader("Access-Control-Allow-Headers", "*");
+  res.end();
+});
 
 //app.use('/users', usersRouter);
 app.use('/weather', weather);
