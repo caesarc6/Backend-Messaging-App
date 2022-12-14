@@ -18,7 +18,9 @@ var cors = require('cors');
 var app = express();
 app.use(cors());
 
-app.listen(80, () => {
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
   console.log("listening on http://localhost:80");
 })
 
