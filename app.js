@@ -18,8 +18,8 @@ var cors = require('cors');
 var app = express();
 app.use(cors());
 
-app.listen(80, () => {
-  console.log("listening on http://localhost:80");
+app.listen(8080, () => {
+  console.log("listening on http://localhost:8080");
 })
 
 app.options('/send', function (req, res) {
