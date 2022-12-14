@@ -69,7 +69,7 @@ Send a POST request in JSON. Header values must contain secured value name and k
 
 #### Send POST request to this Route:
 ```
-https://locahost:3001/routes/send 
+http://message-app-v5.us-west-2.elasticbeanstalk.com/send
 ```
 
 #### In header request:
