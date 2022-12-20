@@ -20,9 +20,9 @@ app.use(cors());
 
 const port = process.env.PORT || 3000;
 
-app.listen(port, () => {
-  console.log("listening on http://localhost:80");
-})
+// app.listen(port, () => {
+//   console.log("listening on http://localhost:80");
+// })
 
 //app.use('/users', usersRouter);
 app.use('/weather', weather);
